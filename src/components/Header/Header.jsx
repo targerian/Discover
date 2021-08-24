@@ -31,11 +31,16 @@ const Header = ({ setCoordinates }) => {
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h4" className={classes.title}>
-          DISCOVER <FlightIcon fontSize={isDesktop ? "medium" : "small"} />
+          DISCOVER
+          <FlightIcon fontSize={isDesktop ? "medium" : "small"} />
         </Typography>
-        <Box display="flex">
+        <Box display="flex" style={{ alignItems: "center" }}>
           {isDesktop && (
-            <Typography variant="h6" className={classes.title}>
+            <Typography
+              variant="h6"
+              className={classes.title}
+              style={{ fontSize: "1rem" }}
+            >
               Search For New Places
             </Typography>
           )}
